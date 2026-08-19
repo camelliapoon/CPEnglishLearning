@@ -1,0 +1,28 @@
+/* 自訂微調樣式 (微調動態與平滑滾動) */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* 按鈕點擊效果 */
+button:active, a:active {
+  transform: scale(0.98);
+}
+
+/* 網頁滾動條美化 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

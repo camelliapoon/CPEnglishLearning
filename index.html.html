@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camellia English Classroom | 現代英文教學部落格</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome 圖示 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- 載入自訂 CSS 檔案 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans">
+
+  <!-- 頂部導覽列 Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-lg bg-sky-500 flex items-center justify-center text-white font-bold text-xl shadow-md shadow-sky-200 group-hover:bg-sky-600 transition">
+          <i class="fa-solid font-bold text-lg">C</i>
+        </div>
+        <span class="font-bold text-xl text-slate-800 tracking-tight">Camellia <span class="text-sky-500">English</span></span>
+      </a>
+
+      <!-- 電腦版選單 -->
+      <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600">
+        <a href="#about" class="hover:text-sky-500 transition">關於我們</a>
+        <a href="#features" class="hover:text-sky-500 transition">教學特色</a>
+        <a href="#courses" class="hover:text-sky-500 transition">熱門課程</a>
+        <a href="#contact" class="hover:text-sky-500 transition">聯絡諮詢</a>
+      </nav>
+
+      <div class="hidden md:flex items-center gap-4">
+        <a href="#contact" class="px-5 py-2.5 rounded-full bg-slate-800 text-white font-medium hover:bg-sky-500 transition shadow-sm hover:shadow-md">
+          免費試聽預約
+        </a>
+      </div>
+
+      <!-- 手機版漢堡選單按鈕 -->
+      <button id="menuBtn" class="md:hidden text-slate-600 text-2xl p-2 focus:outline-none">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- 手機版下拉選單 -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-100 px-6 py-4 space-y-4">
+      <a href="#about" class="block font-medium text-slate-600 hover:text-sky-500">關於我們</a>
+      <a href="#features" class="block font-medium text-slate-600 hover:text-sky-500">教學特色</a>
+      <a href="#courses" class="block font-medium text-slate-600 hover:text-sky-500">熱門課程</a>
+      <a href="#contact" class="block font-medium text-slate-600 hover:text-sky-500">聯絡諮詢</a>
+      <a href="#contact" class="block w-full text-center px-5 py-2.5 rounded-full bg-slate-800 text-white font-medium hover:bg-sky-500 transition">
+        免費試聽預約
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero 英雄大圖區 -->
+  <section class="relative pt-16 pb-24 lg:pt-24 lg:pb-32 overflow-hidden bg-gradient-to-b from-slate-50 via-sky-50/30 to-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-100 text-sky-700 text-xs sm:text-sm font-semibold mb-6">
+        <i class="fa-solid fa-sparkles"></i> 探索全新的英語學習體驗
+      </span>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight max-w-4xl mx-auto mb-6">
+        掌握自信開口的英語力<br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-indigo-600">打造你的無界限未來</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+        摒棄傳統死記硬背！專為不同階層學員設計的情境式教學與系統化教材，帶你輕鬆提升口語、文法與閱讀能力。
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#courses" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-sky-500 text-white font-semibold text-base hover:bg-sky-600 shadow-lg shadow-sky-200 transition">
+          探索精選課程
+        </a>
+        <a href="#about" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-white border border-slate-200 text-slate-700 font-semibold text-base hover:bg-slate-50 transition">
+          了解教學理念
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 關於我們 About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="relative">
+          <div class="aspect-video lg:aspect-square rounded-2xl bg-gradient-to-tr from-sky-100 to-indigo-50 border border-slate-100 p-8 flex items-center justify-center text-slate-400">
+            <div class="text-center">
+              <i class="fa-solid fa-graduation-cap text-6xl text-sky-400 mb-4"></i>
+              <p class="font-medium text-slate-600">優質現代化英文學習空間</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 class="text-3xl font-bold text-slate-900 mb-6">為你量身打造的學習路徑</h2>
+          <p class="text-slate-600 leading-relaxed mb-6">
+            我們相信，學習英文不該是一件枯燥乏味的事。透過整合真實生活情境與精準知識點，幫助學員建立對於語言的直覺與好感度。
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full bg-sky-100 text-sky-600 flex items-center justify-center font-bold text-sm flex-shrink-0 mt-1">✓</div>
+              <div>
+                <h4 class="font-bold text-slate-800">因材施教的個人化指導</h4>
+                <p class="text-sm text-slate-500">針對不同年齡層與英文程度，精準安排專屬學習進度。</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full bg-sky-100 text-sky-600 flex items-center justify-center font-bold text-sm flex-shrink-0 mt-1">✓</div>
+              <div>
+                <h4 class="font-bold text-slate-800">實戰導向的口語與閱讀</h4>
+                <p class="text-sm text-slate-500">結合主題式討論與閱讀理解包，讓學習成果能即刻應用。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 特色與服務 Features Section -->
+  <section id="features" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold text-slate-900 mb-4">四大核心教學特色</h2>
+      <p class="text-slate-600 max-w-xl mx-auto mb-16">系統化教學架構，帶你穩紮穩打建立英文實力。</p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition text-left">
+          <div class="w-12 h-12 rounded-xl bg-sky-50 text-sky-500 flex items-center justify-center text-xl font-bold mb-6">
+            <i class="fa-solid fa-comments"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-800 mb-2">情境式口語演練</h3>
+          <p class="text-sm text-slate-500 leading-relaxed">設計多元生活場景，克服開口焦慮，打造自然流利的口語反應。</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition text-left">
+          <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-500 flex items-center justify-center text-xl font-bold mb-6">
+            <i class="fa-solid fa-book-open"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-800 mb-2">系統化文法圖解</h3>
+          <p class="text-sm text-slate-500 leading-relaxed">告別死記硬背，透過邏輯圖解輕鬆搞懂複雜文法句型。</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition text-left">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-500 flex items-center justify-center text-xl font-bold mb-6">
+            <i class="fa-solid fa-file-pen"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-800 mb-2">客製化閱讀學習包</h3>
+          <p class="text-sm text-slate-500 leading-relaxed">精選現代主題閱讀文章與單字整理，輕鬆培養語感。</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition text-left">
+          <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-500 flex items-center justify-center text-xl font-bold mb-6">
+            <i class="fa-solid fa-chart-line font-bold"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-800 mb-2">學習進度追蹤</h3>
+          <p class="text-sm text-slate-500 leading-relaxed">定期能力評估與學習回饋，讓你明確掌握每一步成長。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 熱門課程 Courses Section -->
+  <section id="courses" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-slate-900 mb-4">精選課程與單元</h2>
+        <p class="text-slate-600">尋找最適合你當前階段的英語學習方案</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- 課程 1 -->
+        <div class="rounded-2xl border border-slate-200 overflow-hidden flex flex-col justify-between hover:border-sky-300 hover:shadow-lg transition">
+          <div class="p-8">
+            <span class="text-xs font-semibold px-2.5 py-1 rounded bg-sky-100 text-sky-700">初級 / 基礎打底</span>
+            <h3 class="text-2xl font-bold text-slate-800 mt-4 mb-2">生活實用英語會話</h3>
+            <p class="text-sm text-slate-500 mb-6">適合想克服發音障礙、建立開口自信的學習者。</p>
+            <ul class="space-y-3 text-sm text-slate-600 border-t border-slate-100 pt-6">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-500"></i> 日常生活情境模擬</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-500"></i> 自然發音與連音技巧</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-500"></i> 基礎常用詞彙累積</li>
+            </ul>
+          </div>
+          <div class="px-8 pb-8">
+            <a href="#contact" class="block w-full text-center py-3 rounded-xl border border-slate-200 font-semibold text-slate-700 hover:bg-slate-800 hover:text-white hover:border-slate-800 transition">瞭解詳情</a>
+          </div>
+        </div>
+
+        <!-- 課程 2 (重點推薦) -->
+        <div class="rounded-2xl border-2 border-sky-500 overflow-hidden flex flex-col justify-between shadow-md relative bg-sky-50/10">
+          <span class="absolute top-0 right-0 bg-sky-500 text-white text-xs font-bold px-4 py-1 rounded-bl-lg">熱門推薦</span>
+          <div class="p-8">
+            <span class="text-xs font-semibold px-2.5 py-1 rounded bg-indigo-100 text-indigo-700">中級 / 進階提升</span>
+            <h3 class="text-2xl font-bold text-slate-800 mt-4 mb-2">職場與商務溝通專題</h3>
+            <p class="text-sm text-slate-500 mb-6">適合需要撰寫英文信件、參與英文會議的上班族。</p>
+            <ul class="space-y-3 text-sm text-slate-600 border-t border-slate-100 pt-6">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-500"></i> 商務 Email 寫作邏輯</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-500"></i> 簡報表達與討論技巧</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-500"></i> 跨文化溝通溝通術</li>
+            </ul>
+          </div>
+          <div class="px-8 pb-8">
+            <a href="#contact" class="block w-full text-center py-3 rounded-xl bg-sky-500 text-white font-semibold hover:bg-sky-600 transition shadow-md shadow-sky-200">立即諮詢</a>
+          </div>
+        </div>
+
+        <!-- 課程 3 -->
+        <div class="rounded-2xl border border-slate-200 overflow-hidden flex flex-col justify-between hover:border-sky-300 hover:shadow-lg transition">
+          <div class="p-8">
+            <span class="text-xs font-semibold px-2.5 py-1 rounded bg-emerald-100 text-emerald-700">閱讀 / 檢定考</span>
+            <h3 class="text-2xl font-bold text-slate-800 mt-4 mb-2">深度閱讀與文法解析</h3>
+            <p class="text-sm text-slate-500 mb-6">針對想理解長篇長句、擴充高階詞彙的實力派學員。</p>
+            <ul class="space-y-3 text-sm text-slate-600 border-t border-slate-100 pt-6">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-500"></i> 長句拆解與語法分析</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-500"></i> 時事文章與批判思考</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-500"></i> 精準字詞替換練習</li>
+            </ul>
+          </div>
+          <div class="px-8 pb-8">
+            <a href="#contact" class="block w-full text-center py-3 rounded-xl border border-slate-200 font-semibold text-slate-700 hover:bg-slate-800 hover:text-white hover:border-slate-800 transition">瞭解詳情</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 聯絡表單 Contact Section -->
+  <section id="contact" class="py-20 bg-slate-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-slate-100">
+        <div class="text-center mb-10">
+          <h2 class="text-3xl font-bold text-slate-900 mb-3">預約體驗 / 聯絡我們</h2>
+          <p class="text-slate-600">填寫下方表單，我們將於 24 小時內與你聯繫，安排專屬諮詢！</p>
+        </div>
+
+        <form id="contactForm" class="space-y-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-semibold text-slate-700 mb-2">您的姓名</label>
+              <input type="text" required placeholder="例如：王小明" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition">
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-slate-700 mb-2">電子郵件</label>
+              <input type="email" required placeholder="example@email.com" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition">
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-slate-700 mb-2">想了解的課程或主題</label>
+            <select class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition text-slate-600">
+              <option>生活實用英語會話</option>
+              <option>職場與商務溝通專題</option>
+              <option>深度閱讀與文法解析</option>
+              <option>其他諮詢需求</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-slate-700 mb-2">留言訊息</label>
+            <textarea rows="4" placeholder="請簡單說明你的目前英文程度或學習目標..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition"></textarea>
+          </div>
+          <button type="submit" class="w-full py-4 rounded-xl bg-sky-500 text-white font-bold hover:bg-sky-600 transition shadow-lg shadow-sky-200">
+            送出諮詢表單
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 頁尾 Footer -->
+  <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-sky-500 flex items-center justify-center text-white font-bold">C</div>
+        <span class="font-bold text-lg text-white">Camellia English Classroom</span>
+      </div>
+      <p class="text-sm">© 2026 Camellia English Classroom. All rights reserved.</p>
+      <div class="flex gap-6 text-slate-400">
+        <a href="#" class="hover:text-white transition"><i class="fa-brands fa-facebook text-xl"></i></a>
+        <a href="#" class="hover:text-white transition"><i class="fa-brands fa-instagram text-xl"></i></a>
+        <a href="#" class="hover:text-white transition"><i class="fa-brands fa-youtube text-xl"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 載入自訂 JavaScript 檔案 -->
+  <script src="script.js"></script>
+</body>
+</html>
